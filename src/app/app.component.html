@@ -1,0 +1,34 @@
+
+<div class="container">
+  <div style="text-align:center">
+    <section id ="header">
+      <h1 style="color: #ff5d00;">
+         {{title}}
+      </h1>
+    </section>
+    <div class="row">
+
+        <div class="col-lg-5 col-md-5 ">
+       <app-add-food
+        (addNewFood)="showFood($event)"
+       ></app-add-food>
+        </div>
+
+
+        <div class=" well col-lg-7 col-md-7">
+
+          <app-result-pane
+            [childFoodlist]="masterFoodsList"
+            (clickSender)= "showFoodDetailToEdit($event)"
+            (clickRemove)= "deleteFoodButton($event)"
+          ></app-result-pane>
+
+          <app-edit-food
+          [foodToEdit]="selectedFood"
+          (doneClickedSender)="finishedEditing()"
+          ></app-edit-food>
+
+        </div>
+    </div>
+  </div>
+</div>
