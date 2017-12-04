@@ -12,6 +12,10 @@ ul  {
 	text-decoration: none;
 	list-style: none;
 }
+foodLabel{
+  color:green;
+  font-weight: bolder;
+}
 span {
 	color: green;
 }

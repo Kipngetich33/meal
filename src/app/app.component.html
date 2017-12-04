@@ -15,6 +15,13 @@
        ></app-add-food>
         </div>
     </div>
+
+    <app-edit-food
+    [foodToEdit]="selectedFood"
+    (doneClickedSender)="finishedEditing()"
+    ></app-edit-food>
+
+
     <div class="row">
 
         <div class>
@@ -24,12 +31,6 @@
             (clickSender)= "showFoodDetailToEdit($event)"
             (clickRemove)= "deleteFoodButton($event)"
           ></app-result-pane>
-
-          <app-edit-food
-          [foodToEdit]="selectedFood"
-          (doneClickedSender)="finishedEditing()"
-          ></app-edit-food>
-
         </div>
     </div>
   </div>
