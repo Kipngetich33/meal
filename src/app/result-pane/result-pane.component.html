@@ -13,8 +13,8 @@
 </div>
 
 <hr>
-<h2 style="color: rgb(24, 204, 156);">
-		Meal List
+<h2 style="color:purple;">
+		<strong>MEALS LIST</strong> 
 </h2>
 
 
@@ -22,13 +22,16 @@
 		<div class=col-md-4>
 				<div class="thumbnail">
 					<div id="foodImageDiv">
-							<br><br>Food<br><br>
+							<br><br><strong>Food</strong><br><br>
 					</div>
-						<hr>
-						<span id="foodLabel">food: </span> &nbsp;{{foodList.name}}<br>
-						<span id="foodLabel">calories: </span> &nbsp;{{foodList.calories}}<br>
-						<span id="foodLabel">description :</span> &nbsp;{{foodList.description}}
-						<hr>
+						<div id="floatLeft">
+								<hr>
+								<span id="foodLabel"><strong>Food:  &nbsp;</strong></span>{{foodList.name}}<br>
+								<span id="foodLabel"><strong>Calories: &nbsp;</strong></span>{{foodList.calories}}<br>
+								<span id="foodLabel"><strong>description: &nbsp;</strong></span> {{foodList.description}}
+								<hr>
+						</div>
+						
 						<button class=" btn btn-primary"(click)="editFoodButton(foodList)">Edit</button>
 						<button class="btn btn-danger" (click)="deleteFoodButton(foodList)" >Delete</button>
 		

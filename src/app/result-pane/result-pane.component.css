@@ -1,6 +1,6 @@
 #foodImageDiv{
   background-color:#ffc34d;
-  color:white;
+  color:purple;
 }
 .thumbnail{
   border: solid 3px gainsboro;
@@ -13,11 +13,15 @@ ul  {
 	list-style: none;
 }
 foodLabel{
-  color:green;
+  color:purple ;
   font-weight: bolder;
+  padding-left: 10px;
 }
 span {
-	color: green;
+	color: purple;
+}
+#floatLeft{
+  text-align: left;
 }
 button {
 	margin: 5px;
