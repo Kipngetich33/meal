@@ -13,32 +13,16 @@
           </form>
 </div>
 
-	<div >
-
-		<table >
-			<tr>
-				<th>Meal</th>
-				<th>Description</th>
-				<th>Calories</th>
-				<th>Delete/Edit</th>
-			</tr>
-			<tr *ngFor="let foodList of childFoodlist | filter:caloriesToShow">
-				<td><div><span> {{foodList.name}}</span></div> 	</td>
-				<td><div><span> {{foodList.description}}</span> </div></td>
-				<td><div><span> {{foodList.calories}} </span></div> </td>
-				<td><div><button class=" btn btn-primary"(click)="editFoodButton(foodList)">Edit</button>
-						<button class="btn btn-danger" (click)="deleteFoodButton(foodList)" >Delete</button></div>
-			</td>
-			</tr>
-
-			<tr>
-
-			</tr>
-
-		</table>
-		<ul>
-			<li>
-			</li>
-		</ul>
+	<div *ngFor="let foodList of childFoodlist | filter:caloriesToShow">
+		<div class=col-md-4>
+				<div class="thumbnail">
+						image<br><br><br><br>
+						<hr>
+						food:{{foodList.name}}<br>
+						calories: {{foodList.calories}}<br>
+						description :{{foodList.description}}
+		
+				</div>		  
+		</div>
 	</div>
 
