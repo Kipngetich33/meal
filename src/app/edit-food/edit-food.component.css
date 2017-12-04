@@ -1,12 +1,13 @@
-input {
-  marging:10px;
-  border-size:20px;
-  box-sizing: inherit;
-  border-radius: 3px;
+
+.form-control {
+  border: dashed 2px brown;
   text-align: center;
 }
 button {
-  margin-top: 10px;
+  margin-top: 5px;
+}
+#editDiv{
+  background-color: gainsboro;
 }
 
 
