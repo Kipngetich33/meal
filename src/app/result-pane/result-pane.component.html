@@ -1,6 +1,5 @@
-<h2 style="color: rgb(24, 204, 156);">
-	Meal List
-</h2>
+<hr>
+
 
 <div class="form-group">
 
@@ -10,17 +9,28 @@
 							<option value="high">High Calory Food</option>
 							<option value="low">Low Calory Food</option>
             </select>
-          </form>
+		  </form>
 </div>
+
+<hr>
+<h2 style="color: rgb(24, 204, 156);">
+		Meal List
+</h2>
+
 
 	<div *ngFor="let foodList of childFoodlist | filter:caloriesToShow">
 		<div class=col-md-4>
 				<div class="thumbnail">
-						image<br><br><br><br>
+					<div id="foodImageDiv">
+							<br><br>Food<br><br>
+					</div>
 						<hr>
-						food:{{foodList.name}}<br>
-						calories: {{foodList.calories}}<br>
-						description :{{foodList.description}}
+						<span></span>food:{{foodList.name}}<br>
+						<span></span>calories: {{foodList.calories}}<br>
+						<span></span>description :{{foodList.description}}
+						<hr>
+						<button class=" btn btn-primary"(click)="editFoodButton(foodList)">Edit</button>
+						<button class="btn btn-danger" (click)="deleteFoodButton(foodList)" >Delete</button>
 		
 				</div>		  
 		</div>

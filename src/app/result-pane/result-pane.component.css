@@ -1,3 +1,13 @@
+#foodImageDiv{
+  background-color:#ffc34d;
+  color:white;
+}
+.thumbnail{
+  border: solid 3px gainsboro;
+}
+/* h2{
+  color:white;
+} */
 ul  {
 	text-decoration: none;
 	list-style: none;

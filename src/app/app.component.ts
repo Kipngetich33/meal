@@ -13,7 +13,8 @@ export class AppComponent {
 
   public masterFoodsList:Food[]=[
   	new Food("Chapati","I loved the chapatis", 400),
-  	new Food("Pizza","I also loved this one", 800)
+    new Food("Pizza","I also loved this one", 800),
+    new Food("NyamChom","It was oversalted", 600)
   	
   ];
 
