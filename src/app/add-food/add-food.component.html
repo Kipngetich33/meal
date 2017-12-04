@@ -1,31 +1,40 @@
-<form class="" >
+<div class="col-md-3"></div>
+<div class="col-md-6">
+		<form class="" >
+				
+					<div class="form-group row">
+						<label id="label" >Food</label><br>
+						<div >
+							<input placeholder="Enter Meal" style="width:90%; height:40px" #addFoodName id="centerInput"><br>
+						</div>
+					</div>
+				
+				
+					<div class="form-group row">
+						<label id="label">Calories</label><br>
+						<div>
+							<input placeholder="Enter amount of calories (Number)" style="width:90%; height:40px" #newCalorie id="centerInput">
+						</div>
+					</div>
 
-	<div class="form-group row">
-		<label >Food</label><br>
-		<div >
-			<input placeholder="Enter Meal" style="width:90%; height:40px" #addFoodName id="centerInput"><br>
-		</div>
-	</div>
+					<div class="form-group row">
+							<label id="label">Description</label><br>
+							<div >
+								<input placeholder="How did You like it" style="width:90%; height:40px" #newDescription id="centerInput"><br>
+							</div>
+						</div>
 
-	<div class="form-group row">
-		<label>Description</label><br>
-		<div >
-			<input placeholder="How did You like it" style="width:90%; height:40px" #newDescription id="centerInput"><br>
-		</div>
-	</div>
+					<button class="btn btn-primary" id="add-button" (click)="addFood( addFoodName.value, newDescription.value, newCalorie.value);
+						addFoodName.value='';
+						newDescription.value='';
+						newCalorie.value='';
+					">Add a Meal
+					</button>
+				
+				
+				</form>
 
-	<div class="form-group row">
-		<label>Calories</label><br>
-		<div>
-			<input placeholder="Enter amount of calories (Number)" style="width:90%; height:40px" #newCalorie id="centerInput">
-		</div>
-	</div>
-		<button class="btn btn-primary" style="margin-top:50px" (click)="addFood( addFoodName.value, newDescription.value, newCalorie.value);
-		 addFoodName.value='';
-		 newDescription.value='';
-		 newCalorie.value='';
-		">Add a Meal
-		</button>
+</div>
+<div class="col-md-3"></div>
 
 
-</form>

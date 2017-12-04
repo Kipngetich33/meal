@@ -2,16 +2,24 @@
 #centerInput{
 	text-align: center
 }
+#label{
+	color :purple;
+
+}
 input {
 	border-radius: 10px;
-	border:3px;
+	border:solid 3px gainsboro;
 	padding-left:20px;
+	width: 100px;
 }
 form {
-	background-color: rgb(218, 215, 228);
+	background-color: #ffffffff;
 	border-radius: 10px;
 }
 button {
 	margin-bottom: 40px;
+}
+#add-button{
+	margin-top: 0px;
 }
 
