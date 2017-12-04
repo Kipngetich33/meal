@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
-import { FooterComponent } from './footer/footer.component';
 import { ResultPaneComponent } from './result-pane/result-pane.component';
 import { AddFoodComponent } from './add-food/add-food.component';
 import { EditFoodComponent } from './edit-food/edit-food.component';
@@ -14,7 +13,6 @@ import { FilterPipe } from './filter.pipe';
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent,
     ResultPaneComponent,
     AddFoodComponent,
     EditFoodComponent,
